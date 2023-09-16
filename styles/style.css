@@ -9,12 +9,12 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url(/assets/img/background-moon.jpg);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; */
 }
-.todo-body {
+/* .todo-body {
   width: 400px;
   height: 500px;
   box-shadow: 0 0 10px purple;
@@ -75,4 +75,4 @@ body {
   align-items: center;
   gap: 10px;
   margin-top: 20px;
-}
+} */

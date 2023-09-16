@@ -60,10 +60,10 @@ body {
   border: 0;
   cursor: pointer;
 }
-/* .addBtn > .image2 {
+.addBtn > .image2 {
   display: none;
 }
-.addBtn:active > .image2 {
+/* .addBtn:active > .image2 {
   display: block;
 }
 .addBtn:active > .image1 {

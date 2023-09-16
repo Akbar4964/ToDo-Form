@@ -66,10 +66,10 @@ body {
 .addBtn:active > .image2 {
   display: block;
 }
-/* .addBtn:active > .image1 {
+.addBtn:active > .image1 {
   display: none;
 }
-.input-container {
+/* .input-container {
   display: flex;
   justify-content: center;
   align-items: center;

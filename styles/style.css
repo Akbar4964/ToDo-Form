@@ -27,11 +27,11 @@ body {
   padding: 0 20px;
   margin: 0 auto;
 }
-/* .empty-image {
+.empty-image {
   width: 400px;
   height: 400px;
 }
-.todo-title {
+/* .todo-title {
   text-align: center;
   padding-top: 10px;
   color: #fff;

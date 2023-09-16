@@ -70,10 +70,5 @@ function rendiredFunc(arr) {
 //           <button
 //           class="delete-btn"
 //           onclick="remove(this)"
-//           >
-//           Edit
-//           </button>
-//           <button
-//           class="delete-btn"
 
 

@@ -8,26 +8,26 @@ const elEmptyImage = document.querySelector(".empty-image");
 
 const list = [];
 
-// elForm.addEventListener("submit", function (evt) {
-//   evt.preventDefault();
-//   let value = elToDoInput.value;
-//   const findIdx = list.findIndex((el) => el.title === value.trim());
-//   if (value === "") {
-//     alert("malumot mavjud emas");
-//   } else if (findIdx < 0) {
-//     const newObj = {
-//       title: value.trim(),
-//       id: Date.now(),
-//     };
+elForm.addEventListener("submit", function (evt) {
+  evt.preventDefault();
+  let value = elToDoInput.value;
+  const findIdx = list.findIndex((el) => el.title === value.trim());
+  if (value === "") {
+    alert("malumot mavjud emas");
+  } else if (findIdx < 0) {
+    const newObj = {
+      title: value.trim(),
+      id: Date.now(),
+    };
 
-//     list.push(newObj);
-//     elToDoInput.value = null;
-//   } else {
-//     alert("bu maluot mavjud");
-//   }
+    list.push(newObj);
+    elToDoInput.value = null;
+  } else {
+    alert("bu maluot mavjud");
+  }
 
-//   rendiredFunc(list);
-// });
+  rendiredFunc(list);
+});
 
 function remove(id) {
   console.log(id);

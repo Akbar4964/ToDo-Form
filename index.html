@@ -7,6 +7,44 @@
     <title>TODO-LIST</title>
   </head>
   <body>
+    <div class="container">
+      <div class="todo-body">
+        <h1 class="todo-title">ToDo-List</h1>
+        <form class="form-js input-container">
+          <input
+            type="text"
+            class="todo-input"
+            placeholder="Add a new task..."
+          />
+          <button class="addBtn" type="submit">
+            <img class="image1" src="./assets/svg/add-button.svg" alt="" />
+            <img class="image2" src="./assets/svg/checked-button.svg" alt="" />
+          </button>
+        </form>
+        <div class="todo-container">
+          <ul class="todo-list">
+            <!-- <li class="todo">
+              <span class="${checked}">sadfsad</span>
+              <button
+                class="delete-btn"
+                data-index="${index}"
+                onclick="remove(this)"
+              >
+                Edit
+              </button>
+              <button
+                class="delete-btn"
+                data-index="${index}"
+                onclick="remove(this)"
+              >
+                Delete
+              </button>
+            </li> -->
+          </ul>
+          <img class="empty-image" src="./assets/img/empty.png" alt="" />
+        </div>
+      </div>
+    </div>
     <script src="./scripts/script.js"></script>
   </body>
 </html>

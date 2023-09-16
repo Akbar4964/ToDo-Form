@@ -58,5 +58,28 @@ function rendiredFunc(arr) {
       `;
   });
 }
+// function rendiredFunc(arr) {
+//   elToDoList.innerHTML = null;
+
+//   arr.forEach((el) => {
+//     elToDoList.innerHTML += `
+//       <li class="todo">
+//           <span class="checked">${el.title}</span>
+//           <button
+//           class="delete-btn"
+//           onclick="remove(this)"
+//           >
+//           Edit
+//           </button>
+//           <button
+//           class="delete-btn"
+//           onclick="remove(${el.id})"
+//           >
+//           Delete
+//           </button>
+//       </li>
+//       `;
+//   });
+// }
 
 

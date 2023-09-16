@@ -31,12 +31,12 @@ body {
   width: 400px;
   height: 400px;
 }
-/* .todo-title {
+.todo-title {
   text-align: center;
   padding-top: 10px;
   color: #fff;
 }
-.todo-input {
+/* .todo-input {
   width: 280px;
   height: 40px;
   padding-left: 15px;

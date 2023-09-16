@@ -69,10 +69,10 @@ body {
 .addBtn:active > .image1 {
   display: none;
 }
-/* .input-container {
+.input-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
   margin-top: 20px;
-} */
+}

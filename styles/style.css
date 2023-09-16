@@ -63,10 +63,10 @@ body {
 .addBtn > .image2 {
   display: none;
 }
-/* .addBtn:active > .image2 {
+.addBtn:active > .image2 {
   display: block;
 }
-.addBtn:active > .image1 {
+/* .addBtn:active > .image1 {
   display: none;
 }
 .input-container {

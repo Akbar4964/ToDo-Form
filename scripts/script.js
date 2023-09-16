@@ -1,4 +1,4 @@
-const elForm = document.querySelector(".form-js");
+// const elForm = document.querySelector(".form-js");
 const elToDoInput = document.querySelector(".todo-input");
 
 const elToDoList = document.querySelector(".todo-list");

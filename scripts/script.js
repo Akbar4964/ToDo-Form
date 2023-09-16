@@ -59,10 +59,3 @@ function rendiredFunc(arr) {
       `;
   });
 }
-
-// function rendiredFunc(arr) {
-//   elToDoList.innerHTML = null;
-
-//   arr.forEach((el) => {
-
-

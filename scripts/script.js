@@ -1,5 +1,3 @@
-let name1 = "Akbar";
-console.log(name1);
 // const elForm = document.querySelector(".form-js");
 
 // const elToDoInput = document.querySelector(".todo-input");

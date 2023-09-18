@@ -61,7 +61,3 @@ console.log(name1);
 //       `;
 //   });
 // }
-
-
-//   console.log(d());
-// }

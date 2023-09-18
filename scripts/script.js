@@ -41,7 +41,7 @@ function rendiredFunc(arr) {
     elToDoList.innerHTML += `
       <li class="todo">
           <span class="checked">${el.title}</span>
-//           <button
+          <button
 //           class="delete-btn"
 //           onclick="remove(this)"
 //           >

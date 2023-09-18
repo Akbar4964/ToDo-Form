@@ -38,7 +38,7 @@ function rendiredFunc(arr) {
   elToDoList.innerHTML = null;
 
   arr.forEach((el) => {
-//     elToDoList.innerHTML += `
+    elToDoList.innerHTML += `
 //       <li class="todo">
 //           <span class="checked">${el.title}</span>
 //           <button

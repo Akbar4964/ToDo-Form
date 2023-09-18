@@ -16,8 +16,8 @@ elForm.addEventListener("submit", function (evt) {
 //     alert("malumot mavjud emas");
 //   } else if (findIdx < 0) {
 //     const newObj = {
-//       title: value.trim(),
-//       id: Date.now(),
+      title: value.trim(),
+      id: Date.now(),
     };
 
 //     list.push(newObj);

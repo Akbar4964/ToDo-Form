@@ -55,5 +55,5 @@ function rendiredFunc(arr) {
 //           </button>
 //       </li>
 //       `;
-//   });
+  });
 }

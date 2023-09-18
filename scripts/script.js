@@ -34,7 +34,7 @@ function remove(id) {
   rendiredFunc(list);
 }
 
-// function rendiredFunc(arr) {
+function rendiredFunc(arr) {
 //   elToDoList.innerHTML = null;
 
 //   arr.forEach((el) => {

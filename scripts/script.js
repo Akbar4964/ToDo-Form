@@ -62,8 +62,6 @@ console.log(name1);
 //   });
 // }
 
-// console.log(d());
-
 // function f() {
 //   function d() {}
 

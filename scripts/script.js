@@ -37,7 +37,7 @@ function remove(id) {
 function rendiredFunc(arr) {
   elToDoList.innerHTML = null;
 
-//   arr.forEach((el) => {
+  arr.forEach((el) => {
 //     elToDoList.innerHTML += `
 //       <li class="todo">
 //           <span class="checked">${el.title}</span>

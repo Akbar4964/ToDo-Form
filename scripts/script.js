@@ -42,7 +42,7 @@ function rendiredFunc(arr) {
       <li class="todo">
           <span class="checked">${el.title}</span>
           <button
-//           class="delete-btn"
+          class="delete-btn"
 //           onclick="remove(this)"
 //           >
 //           Edit

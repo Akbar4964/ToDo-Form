@@ -40,7 +40,7 @@ function rendiredFunc(arr) {
   arr.forEach((el) => {
     elToDoList.innerHTML += `
       <li class="todo">
-//           <span class="checked">${el.title}</span>
+          <span class="checked">${el.title}</span>
 //           <button
 //           class="delete-btn"
 //           onclick="remove(this)"

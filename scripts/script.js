@@ -53,7 +53,7 @@ function rendiredFunc(arr) {
 //           >
 //           Delete
 //           </button>
-//       </li>
+      </li>
       `;
   });
 }

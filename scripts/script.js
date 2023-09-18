@@ -52,7 +52,7 @@ function rendiredFunc(arr) {
 //           onclick="remove(${el.id})"
 //           >
 //           Delete
-//           </button>
+          </button>
       </li>
       `;
   });

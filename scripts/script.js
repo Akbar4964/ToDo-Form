@@ -32,7 +32,7 @@ function remove(id) {
 //   const findIdx = list.findIndex((el) => el.id == id);
 //   list.splice(findIdx, 1);
 //   rendiredFunc(list);
-// }
+}
 
 // function rendiredFunc(arr) {
 //   elToDoList.innerHTML = null;

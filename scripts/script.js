@@ -22,7 +22,7 @@ elForm.addEventListener("submit", function (evt) {
   }
 
       list.push(newObj);
-  //     elToDoInput.value = null;
+      elToDoInput.value = null;
   //   } else {
   //     alert("bu maluot mavjud");
   //   }

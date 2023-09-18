@@ -13,19 +13,17 @@ elForm.addEventListener("submit", function (evt) {
   let value = elToDoInput.value;
   const findIdx = list.findIndex((el) => el.title === value.trim());
   if (value === "") {
-        alert("malumot mavjud emas");
-      } else if (findIdx < 0) {
+    alert("malumot mavjud emas");
+  } else if (findIdx < 0) {
     const newObj = {
       title: value.trim(),
       id: Date.now(),
     };
+  } else {
+    alert("bu maluot mavjud");
   }
-
-      list.push(newObj);
-      elToDoInput.value = null;
-  //   } else {
-  //     alert("bu maluot mavjud");
-  //   }
+  list.push(newObj);
+  elToDoInput.value = null;
 
   //   rendiredFunc(list);
 });

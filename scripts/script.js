@@ -47,7 +47,7 @@ function rendiredFunc(arr) {
           >
           Edit
           </button>
-//           <button
+          <button
           class="delete-btn"
           onclick="remove(${el.id})"
           >

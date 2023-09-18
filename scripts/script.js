@@ -62,8 +62,6 @@ console.log(name1);
 //   });
 // }
 
-var name = "Akbar";
-
 // console.log(d());
 
 // function f() {

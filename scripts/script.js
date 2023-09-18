@@ -39,7 +39,7 @@ function rendiredFunc(arr) {
 
   arr.forEach((el) => {
     elToDoList.innerHTML += `
-//       <li class="todo">
+      <li class="todo">
 //           <span class="checked">${el.title}</span>
 //           <button
 //           class="delete-btn"

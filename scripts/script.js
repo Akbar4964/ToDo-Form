@@ -18,7 +18,7 @@ elForm.addEventListener("submit", function (evt) {
 //     const newObj = {
 //       title: value.trim(),
 //       id: Date.now(),
-//     };
+    };
 
 //     list.push(newObj);
 //     elToDoInput.value = null;

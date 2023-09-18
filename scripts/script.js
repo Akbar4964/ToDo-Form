@@ -43,7 +43,7 @@ function rendiredFunc(arr) {
           <span class="checked">${el.title}</span>
           <button
           class="delete-btn"
-//           onclick="remove(this)"
+          onclick="remove(this)"
 //           >
 //           Edit
 //           </button>

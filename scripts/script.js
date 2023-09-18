@@ -8,7 +8,7 @@ const elEmptyImage = document.querySelector(".empty-image");
 
 const list = [];
 
-// elForm.addEventListener("submit", function (evt) {
+elForm.addEventListener("submit", function (evt) {
 //   evt.preventDefault();
 //   let value = elToDoInput.value;
 //   const findIdx = list.findIndex((el) => el.title === value.trim());

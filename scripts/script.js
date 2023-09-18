@@ -50,7 +50,7 @@ function rendiredFunc(arr) {
 //           <button
 //           class="delete-btn"
           onclick="remove(${el.id})"
-//           >
+          >
           Delete
           </button>
       </li>

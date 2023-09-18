@@ -28,7 +28,7 @@ elForm.addEventListener("submit", function (evt) {
 });
 
 function remove(id) {
-//   console.log(id);
+  console.log(id);
 //   const findIdx = list.findIndex((el) => el.id == id);
 //   list.splice(findIdx, 1);
 //   rendiredFunc(list);

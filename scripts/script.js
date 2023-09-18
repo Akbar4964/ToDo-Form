@@ -51,7 +51,7 @@ function rendiredFunc(arr) {
 //           class="delete-btn"
 //           onclick="remove(${el.id})"
 //           >
-//           Delete
+          Delete
           </button>
       </li>
       `;

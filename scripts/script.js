@@ -56,4 +56,4 @@ function rendiredFunc(arr) {
 //       </li>
 //       `;
 //   });
-// }
+}

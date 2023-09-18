@@ -27,7 +27,7 @@ elForm.addEventListener("submit", function (evt) {
 //   }
 
 //   rendiredFunc(list);
-// });
+});
 
 // function remove(id) {
 //   console.log(id);

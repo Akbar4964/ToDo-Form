@@ -25,7 +25,7 @@ elForm.addEventListener("submit", function (evt) {
   list.push(newObj);
   elToDoInput.value = null;
 
-  //   rendiredFunc(list);
+    rendiredFunc(list);
 });
 
 // function remove(id) {

@@ -3,6 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+ul,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
 body {
   height: 100vh;
   display: flex;
@@ -76,3 +81,7 @@ body {
   gap: 10px;
   margin-top: 20px;
 }
+.todo{
+  color: #fff;
+}
+

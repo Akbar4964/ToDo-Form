@@ -48,7 +48,6 @@ function rendiredFunc(arr) {
     newElement2.textContent = "Edit";
     newElement3.textContent = "Delete";
     newElement3.addEventListener("click", remove);
-    newElement1.classList.add("todo-lists");
     if (newElement1.length) {
       elEmptyImage.remove();
     }

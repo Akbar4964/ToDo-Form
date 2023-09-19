@@ -54,6 +54,7 @@ function rendiredFunc(array) {
     newElement3.textContent = "Delete";
     newElement3.classList.add("btn-delete");
     newElement4.append(newElement2, newElement3);
+    newElement4.classList.add("buttons")
     newElementP.textContent = el.title;
     if (newElement1.length) {
       elEmptyImage.remove();

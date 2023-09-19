@@ -102,3 +102,8 @@ body {
   padding: 10px 20px;
   cursor: pointer;
 }
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

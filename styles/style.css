@@ -107,10 +107,9 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
-  padding: 4px;
+  padding: 5px;
   background-color: #ccc;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 40px;
+  border-radius: 70px;
 }
 
 .btn-edit {
@@ -140,9 +139,11 @@ body {
 .buttons {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 7px;
 }
 
-.text{
-  color: #fff;
+.text {
+  color: darkcyan;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }

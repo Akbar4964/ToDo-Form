@@ -95,12 +95,7 @@ body {
 }
 
 .btn-edit {
-  display: inline-block;
-  background-color: green;
-  border: 1px solid red;
-  color: #fff;
-  padding: 10px 20px;
-  cursor: pointer;
+
 }
 .buttons {
   display: flex;

@@ -94,7 +94,7 @@ body {
   align-items: center;
 }
 
-.btn {
+.btn-edit {
   display: inline-block;
   background-color: green;
   border: 1px solid red;

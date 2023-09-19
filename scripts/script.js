@@ -38,9 +38,9 @@ function remove(evt) {
   // rendiredFunc(list);
 }
 
-function rendiredFunc(arr) {
+function rendiredFunc(array) {
   elToDoList.innerHTML = null;
-  arr.forEach((el) => {
+  array.forEach((el) => {
     const newElement1 = document.createElement("li");
     const newElementP = document.createElement("p");
     const newElement2 = document.createElement("button");

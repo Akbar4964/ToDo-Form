@@ -3,11 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 ul,
 li {
   text-decoration: none;
   list-style-type: none;
 }
+
 body {
   height: 100vh;
   display: flex;
@@ -19,6 +21,7 @@ body {
   background-position: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .todo-body {
   width: 400px;
   height: 500px;
@@ -27,20 +30,24 @@ body {
   border-radius: 15px;
   padding: 0 10px;
 }
+
 .container {
   max-width: 1240px;
   padding: 0 20px;
   margin: 0 auto;
 }
+
 .empty-image {
   width: 400px;
   height: 400px;
 }
+
 .todo-title {
   text-align: center;
   padding-top: 10px;
   color: #fff;
 }
+
 .todo-input {
   width: 280px;
   height: 40px;
@@ -52,11 +59,13 @@ body {
   color: #fff;
   outline: 0;
 }
+
 .todo-input::placeholder {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
+
 .addBtn {
   width: 30px;
   height: 30px;
@@ -65,15 +74,19 @@ body {
   border: 0;
   cursor: pointer;
 }
+
 .addBtn > .image2 {
   display: none;
 }
+
 .addBtn:active > .image2 {
   display: block;
 }
+
 .addBtn:active > .image1 {
   display: none;
 }
+
 .input-container {
   display: flex;
   justify-content: center;
@@ -88,6 +101,7 @@ body {
   margin-top: 30px;
   padding: 0 30px;
 }
+
 .todo-lists {
   display: flex;
   justify-content: space-between;
@@ -95,11 +109,11 @@ body {
 }
 
 .btn-edit {
-
 }
+
 .btn-delete {
-
 }
+
 .buttons {
   display: flex;
   align-items: center;

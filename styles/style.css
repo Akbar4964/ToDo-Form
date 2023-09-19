@@ -97,6 +97,9 @@ body {
 .btn-edit {
 
 }
+.btn-delete {
+
+}
 .buttons {
   display: flex;
   align-items: center;

@@ -56,9 +56,9 @@ function rendiredFunc(arr) {
     newElement1.append(newElement4, newElementSpan);
     elToDoList.appendChild(newElement1);
 
-    // if (newElement1.length) {
-    //   elEmptyImage.remove();
-    // }
+    if (newElement1.length) {
+      elEmptyImage.remove();
+    }
   });
 }
 

@@ -34,13 +34,14 @@ function remove(id) {
   list.splice(findIdx, 1);
   rendiredFunc(list);
 }
-const newElement = document.createElement("li");
+const newElement1 = document.createElement("li");
 const newElement2 = document.createElement("button");
 function rendiredFunc(arr) {
   elToDoList.innerHTML = null;
   arr.forEach((el) => {
-    elToDoList.innerHTML += newElement.textContent = `${el.title}`;
-    if (newElement.length) {
+    elToDoList.innerHTML += newElement1.textContent = `${el.title}`;
+    newElement1.append(newElement2);
+    if (newElement1.length) {
       elEmptyImage.remove();
     }
   });

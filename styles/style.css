@@ -114,6 +114,7 @@ body {
   height: 40px;
   border-radius: 50%;
   border: 0;
+  letter-spacing: 1px;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   background-color: darkblue;
@@ -121,6 +122,14 @@ body {
 }
 
 .btn-delete {
+  width: 70px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkred;
   cursor: pointer;
 }
 

@@ -81,7 +81,11 @@ body {
   gap: 10px;
   margin-top: 20px;
 }
-.todo{
-  color: #fff;
-}
 
+.todo-list{
+  display: flex;
+  flex-direction: column;
+}
+.todo-lists{
+  display: flex;
+}

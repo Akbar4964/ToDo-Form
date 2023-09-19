@@ -34,13 +34,21 @@ function remove(id) {
   list.splice(findIdx, 1);
   rendiredFunc(list);
 }
+const newElement = document.createElement("ul");
 const newElement1 = document.createElement("li");
 const newElement2 = document.createElement("button");
+const newElement3 = document.createElement("button");
+const newElement4 = document.createElement("div");
 function rendiredFunc(arr) {
   elToDoList.innerHTML = null;
   arr.forEach((el) => {
     elToDoList.innerHTML += newElement1.textContent = `${el.title}`;
-    newElement1.appendChild(newElement2);
+    elToDoList.appendChild(newElement1.appendChild(newElement4));
+    newElement4.append(newElement2, newElement3);
+    newElement2.textContent = "Edit";
+    newElement3.textContent = "Delete";
+    newElement3.addEventListener("click", remove);
+    newElement1.classList.add("todo-lists");
     if (newElement1.length) {
       elEmptyImage.remove();
     }

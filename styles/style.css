@@ -85,6 +85,8 @@ body {
 .todo-list {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
+  padding: 0 30px;
 }
 .todo-lists {
   display: flex;

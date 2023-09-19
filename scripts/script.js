@@ -40,7 +40,7 @@ function rendiredFunc(arr) {
   elToDoList.innerHTML = null;
   arr.forEach((el) => {
     elToDoList.innerHTML += newElement1.textContent = `${el.title}`;
-    newElement1.append(newElement2);
+    newElement1.appendChild(newElement2);
     if (newElement1.length) {
       elEmptyImage.remove();
     }

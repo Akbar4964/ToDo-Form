@@ -42,7 +42,7 @@ function rendiredFunc(arr) {
   elToDoList.innerHTML = null;
   arr.forEach((el) => {
     const newElement1 = document.createElement("li");
-    const newElementSpan = document.createElement("span");
+    const newElementSpan = document.createElement("p");
     const newElement2 = document.createElement("button");
     const newElement3 = document.createElement("button");
     const newElement4 = document.createElement("div");

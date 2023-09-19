@@ -49,7 +49,7 @@ function rendiredFunc(arr) {
     newElement2.textContent = "Edit";
     newElement2.classList.add("btn");
     newElement1.classList.add("list-item");
-    newElement3.textContent = "Delete";
+    // newElement3.textContent = "Delete";
     newElement3.classList.add("btn-delete");
     newElementSpan.textContent = el.title;
     newElement4.append(newElement2, newElement3);

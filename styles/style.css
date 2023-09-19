@@ -109,9 +109,11 @@ body {
 }
 
 .btn-edit {
+  cursor: pointer;
 }
 
 .btn-delete {
+  cursor: pointer;
 }
 
 .buttons {

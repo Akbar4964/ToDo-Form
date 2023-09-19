@@ -55,7 +55,6 @@ function rendiredFunc(arr) {
     newElement4.append(newElement2, newElement3);
     newElement1.append(newElement4, newElementSpan);
     elToDoList.appendChild(newElement1);
-
     if (newElement1.length) {
       elEmptyImage.remove();
     }

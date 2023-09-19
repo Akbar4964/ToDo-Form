@@ -42,7 +42,7 @@ function rendiredFunc(arr) {
   elToDoList.innerHTML = null;
   arr.forEach((el) => {
     const newElement1 = document.createElement("li");
-    const newElementSpan = document.createElement("p");
+    const newElementP = document.createElement("p");
     const newElement2 = document.createElement("button");
     const newElement3 = document.createElement("button");
     const newElement4 = document.createElement("div");
@@ -53,7 +53,7 @@ function rendiredFunc(arr) {
     newElement3.classList.add("btn-delete");
     newElementSpan.textContent = el.title;
     newElement4.append(newElement2, newElement3);
-    newElement1.append(newElement4, newElementSpan);
+    newElement1.append(newElement4, newElement);
     elToDoList.appendChild(newElement1);
     if (newElement1.length) {
       elEmptyImage.remove();

@@ -99,7 +99,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  padding: 0 30px;
+  padding: 0 33px;
 }
 
 .todo-lists {

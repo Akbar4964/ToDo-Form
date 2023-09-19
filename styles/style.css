@@ -82,10 +82,24 @@ body {
   margin-top: 20px;
 }
 
-.todo-list{
+.todo-list {
   display: flex;
   flex-direction: column;
 }
-.todo-lists{
+.todo-lists {
   display: flex;
+}
+
+.btn {
+  display: inline-block;
+  background-color: green;
+  border: 1px solid red;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

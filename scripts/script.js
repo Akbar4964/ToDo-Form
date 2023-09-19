@@ -46,6 +46,7 @@ function rendiredFunc(arr) {
     const newElement2 = document.createElement("button");
     const newElement3 = document.createElement("button");
     const newElement4 = document.createElement("div");
+    newElement1.append(newElement4, newElementP);
     newElement2.textContent = "Edit";
     newElement2.classList.add("btn");
     newElement1.classList.add("list-item");
@@ -53,7 +54,6 @@ function rendiredFunc(arr) {
     newElement3.classList.add("btn-delete");
     newElementP.textContent = el.title;
     newElement4.append(newElement2, newElement3);
-    newElement1.append(newElement4, newElementP);
     elToDoList.appendChild(newElement1);
     if (newElement1.length) {
       elEmptyImage.remove();

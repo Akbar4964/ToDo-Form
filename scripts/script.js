@@ -52,9 +52,9 @@ function rendiredFunc(arr) {
     newElement2.classList.add("btn");
     newElement3.textContent = "Delete";
     newElement3.classList.add("btn-delete");
-    newElementP.textContent = el.title;
     newElement4.append(newElement2, newElement3);
     elToDoList.appendChild(newElement1);
+    newElementP.textContent = el.title;
     if (newElement1.length) {
       elEmptyImage.remove();
     }

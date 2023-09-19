@@ -99,7 +99,18 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  padding: 0 33px;
+  padding: 0 30px;
+  overflow: auto;
+  height: 311px;
+  mask-image: linear-gradient(to top, transparent, black),
+    linear-gradient(to left, transparent 17px, black 17px);
+  mask-size: 100% 20000px;
+  mask-position: left bottom;
+  -webkit-mask-image: linear-gradient(to top, transparent, black),
+    linear-gradient(to left, transparent 17px, black 17px);
+  -webkit-mask-size: 100% 20000px;
+  -webkit-mask-position: left bottom;
+  transition: mask-position 0.3s, -webkit-mask-position 0.3s;
 }
 
 .todo-lists {
@@ -108,8 +119,42 @@ body {
   align-items: center;
   margin-top: 10px;
   padding: 5px;
-  background-color: #ccc;
+  box-shadow: 0 0 10px purple;
+  background-color: inherit;
   border-radius: 70px;
+}
+
+.todo-lists:hover {
+  transition: all 1s;
+  transform: scale(1.1);
+}
+
+.todo-list::-webkit-scrollbar {
+  width: 17px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background: #252836;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background: #252836;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background: #1f1d2b;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background: #252836;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.empty-image{
+  width: 320px;
+  height: 310px;
 }
 
 .btn-edit {
@@ -143,7 +188,8 @@ body {
 }
 
 .text {
-  color: darkcyan;
+  color: blueviolet;
   font-size: 20px;
+  font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
 }

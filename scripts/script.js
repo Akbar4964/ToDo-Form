@@ -34,7 +34,6 @@ function remove(id) {
   list.splice(findIdx, 1);
   rendiredFunc(list);
 }
-const newElement = document.createElement("ul");
 const newElement1 = document.createElement("li");
 const newElement2 = document.createElement("button");
 const newElement3 = document.createElement("button");

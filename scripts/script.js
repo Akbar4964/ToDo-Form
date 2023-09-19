@@ -47,9 +47,9 @@ function rendiredFunc(arr) {
     const newElement3 = document.createElement("button");
     const newElement4 = document.createElement("div");
     newElement1.append(newElement4, newElementP);
+    newElement1.classList.add("list-item");
     newElement2.textContent = "Edit";
     newElement2.classList.add("btn");
-    newElement1.classList.add("list-item");
     newElement3.textContent = "Delete";
     newElement3.classList.add("btn-delete");
     newElementP.textContent = el.title;

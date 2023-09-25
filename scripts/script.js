@@ -21,7 +21,7 @@ elForm.addEventListener("submit", function (evt) {
     // };
     // list.push(newObj);
   // } else {
-    alert("bu malumot mavjud");
+    // alert("bu malumot mavjud");
   }
 
   elToDoInput.value = null;

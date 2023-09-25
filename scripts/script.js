@@ -15,10 +15,10 @@ elForm.addEventListener("submit", function (evt) {
   if (value === "") {
     alert("malumot mavjud emas");
   } else if (findIdx < 0) {
-    const newObj = {
-      title: value.trim(),
+    // const newObj = {
+      // title: value.trim(),
       // id: Date.now(),
-    };
+    // };
     list.push(newObj);
   } else {
     alert("bu malumot mavjud");

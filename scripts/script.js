@@ -1,69 +1,69 @@
-// const elForm = document.querySelector(".form-js");
+const elForm = document.querySelector(".form-js");
 
-// const elToDoInput = document.querySelector(".todo-input");
+const elToDoInput = document.querySelector(".todo-input");
 
-// const elToDoList = document.querySelector(".todo-list");
+const elToDoList = document.querySelector(".todo-list");
 
-// const elEmptyImage = document.querySelector(".empty-image");
+const elEmptyImage = document.querySelector(".empty-image");
 
-// const list = [];
+const list = [];
 
-// elForm.addEventListener("submit", function (evt) {
-  // evt.preventDefault();
-  // let value = elToDoInput.value;
-  // const findIdx = list.findIndex((el) => el.title === value.trim());
-  // if (value === "") {
-    // alert("malumot mavjud emas");
-  // } else if (findIdx < 0) {
-    // const newObj = {
-      // title: value.trim(),
-      // id: Date.now(),
-    // };
-    // list.push(newObj);
-  // } else {
-    // alert("bu malumot mavjud");
-  // }
+elForm.addEventListener("submit", function (evt) {
+  evt.preventDefault();
+  let value = elToDoInput.value;
+  const findIdx = list.findIndex((el) => el.title === value.trim());
+  if (value === "") {
+    alert("malumot mavjud emas");
+  } else if (findIdx < 0) {
+    const newObj = {
+      title: value.trim(),
+      id: Date.now(),
+    };
+    list.push(newObj);
+  } else {
+    alert("bu malumot mavjud");
+  }
 
-  // elToDoInput.value = null;
-  // rendiredFunc(list);
-// });
+  elToDoInput.value = null;
+  rendiredFunc(list);
+});
 
-// function remove(evt) {
-  // if (evt.target.matches(".btn-delete")) {
-    // const id = evt.target.dataset.itemId;
-    // const findIdx = list.findIndex((el) => el.id == id);
-    // list.splice(findIdx, 1);
-    // rendiredFunc(list);
-  // }
-// }
+function remove(evt) {
+  if (evt.target.matches(".btn-delete")) {
+    const id = evt.target.dataset.itemId;
+    const findIdx = list.findIndex((el) => el.id == id);
+    list.splice(findIdx, 1);
+    rendiredFunc(list);
+  }
+}
 
-// function rendiredFunc(array) {
-  // elToDoList.innerHTML = null;
-  // array.forEach((el) => {
-    // const newElement1 = document.createElement("li");
-    // const newElementP = document.createElement("p");
-    // const newElement2 = document.createElement("button");
-    // const newElement3 = document.createElement("button");
-    // const newElement4 = document.createElement("div");
-    // elToDoList.appendChild(newElement1);
-    // newElement1.append(newElementP, newElement4);
-    // newElement1.classList.add("todo-lists");
-    // newElement2.textContent = "Edit";
-    // newElement2.classList.add("btn-edit");
-    // newElement3.textContent = "Delete";
-    // newElement3.classList.add("btn-delete");
-    // newElement3.dataset.itemId = el.id;
-    // newElement4.append(newElement2, newElement3);
-    // newElement4.classList.add("buttons");
-    // newElementP.textContent = el.title;
-    // newElementP.classList.add("text");
-    // if (elToDoList.length === "") {
-    //   elEmptyImage.remove();
-    // } else if (elToDoList.length === false) {
-    //   return elEmptyImage;
-    // }
-  // });
-// }
+function rendiredFunc(array) {
+  elToDoList.innerHTML = null;
+  array.forEach((el) => {
+    const newElement1 = document.createElement("li");
+    const newElementP = document.createElement("p");
+    const newElement2 = document.createElement("button");
+    const newElement3 = document.createElement("button");
+    const newElement4 = document.createElement("div");
+    elToDoList.appendChild(newElement1);
+    newElement1.append(newElementP, newElement4);
+    newElement1.classList.add("todo-lists");
+    newElement2.textContent = "Edit";
+    newElement2.classList.add("btn-edit");
+    newElement3.textContent = "Delete";
+    newElement3.classList.add("btn-delete");
+    newElement3.dataset.itemId = el.id;
+    newElement4.append(newElement2, newElement3);
+    newElement4.classList.add("buttons");
+    newElementP.textContent = el.title;
+    newElementP.classList.add("text");
+    if (elToDoList.length === "") {
+      elEmptyImage.remove();
+    } else if (elToDoList.length === false) {
+      return elEmptyImage;
+    }
+  });
+}
 
 elToDoList.addEventListener("click", remove);
 

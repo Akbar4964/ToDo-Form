@@ -25,7 +25,7 @@
   // }
 
   elToDoInput.value = null;
-  rendiredFunc(list);
+  // rendiredFunc(list);
 });
 
 // function remove(evt) {

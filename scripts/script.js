@@ -31,7 +31,7 @@ elForm.addEventListener("submit", function (evt) {
 function remove(evt) {
   if (evt.target.matches(".btn-delete")) {
     const id = evt.target.dataset.itemId;
-    const findIdx = list.findIndex((el) => el.id == id);
+    // const findIdx = list.findIndex((el) => el.id == id);
     // list.splice(findIdx, 1);
     // rendiredFunc(list);
   }

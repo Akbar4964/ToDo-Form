@@ -24,7 +24,7 @@
     // alert("bu malumot mavjud");
   // }
 
-  elToDoInput.value = null;
+  // elToDoInput.value = null;
   // rendiredFunc(list);
 });
 

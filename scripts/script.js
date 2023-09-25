@@ -39,7 +39,7 @@ function remove(evt) {
 
 function rendiredFunc(array) {
   // elToDoList.innerHTML = null;
-  array.forEach((el) => {
+  // array.forEach((el) => {
     // const newElement1 = document.createElement("li");
     // const newElementP = document.createElement("p");
     // const newElement2 = document.createElement("button");
@@ -62,7 +62,7 @@ function rendiredFunc(array) {
     // } else if (elToDoList.length === false) {
     //   return elEmptyImage;
     // }
-  });
+  // });
 }
 
 // elToDoList.addEventListener("click", remove);

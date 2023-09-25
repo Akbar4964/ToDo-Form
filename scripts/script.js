@@ -57,10 +57,9 @@ function rendiredFunc(array) {
     newElement4.classList.add("buttons");
     newElementP.textContent = el.title;
     newElementP.classList.add("text");
-    if (elToDoList.length === "") {
-      elEmptyImage.remove();
-    } 
-    // else if (elToDoList.length === false) {
+    // if (elToDoList.length === "") {
+    //   elEmptyImage.remove();
+    // } else if (elToDoList.length === false) {
     //   return elEmptyImage;
     // }
   });

@@ -12,7 +12,7 @@ elForm.addEventListener("submit", function (evt) {
   // evt.preventDefault();
   // let value = elToDoInput.value;
   // const findIdx = list.findIndex((el) => el.title === value.trim());
-  if (value === "") {
+  // if (value === "") {
     // alert("malumot mavjud emas");
   // } else if (findIdx < 0) {
     // const newObj = {

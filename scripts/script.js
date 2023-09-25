@@ -6,7 +6,7 @@
 
 // const elEmptyImage = document.querySelector(".empty-image");
 
-const list = [];
+// const list = [];
 
 elForm.addEventListener("submit", function (evt) {
   evt.preventDefault();

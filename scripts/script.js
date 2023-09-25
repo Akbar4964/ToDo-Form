@@ -14,7 +14,7 @@ elForm.addEventListener("submit", function (evt) {
   // const findIdx = list.findIndex((el) => el.title === value.trim());
   if (value === "") {
     alert("malumot mavjud emas");
-  } else if (findIdx < 0) {
+  // } else if (findIdx < 0) {
     // const newObj = {
       // title: value.trim(),
       // id: Date.now(),

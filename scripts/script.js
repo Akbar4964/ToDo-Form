@@ -49,7 +49,7 @@ function rendiredFunc(array) {
     newElement1.append(newElementP, newElement4);
     newElement1.classList.add("todo-lists");
     newElement2.textContent = "Edit";
-    newElement2.classList.add("btn-edit");
+    // newElement2.classList.add("btn-edit");
     // newElement3.textContent = "Delete";
     // newElement3.classList.add("btn-delete");
     // newElement3.dataset.itemId = el.id;

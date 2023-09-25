@@ -19,7 +19,7 @@ elForm.addEventListener("submit", function (evt) {
       // title: value.trim(),
       // id: Date.now(),
     // };
-    list.push(newObj);
+    // list.push(newObj);
   } else {
     alert("bu malumot mavjud");
   }

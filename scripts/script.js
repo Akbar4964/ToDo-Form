@@ -33,7 +33,7 @@ function remove(evt) {
     const id = evt.target.dataset.itemId;
     const findIdx = list.findIndex((el) => el.id == id);
     list.splice(findIdx, 1);
-    rendiredFunc(list);
+    // rendiredFunc(list);
   }
 }
 

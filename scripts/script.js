@@ -26,7 +26,7 @@
 
   // elToDoInput.value = null;
   // rendiredFunc(list);
-});
+// });
 
 // function remove(evt) {
   // if (evt.target.matches(".btn-delete")) {

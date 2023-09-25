@@ -4,7 +4,7 @@
 
 // const elToDoList = document.querySelector(".todo-list");
 
-const elEmptyImage = document.querySelector(".empty-image");
+// const elEmptyImage = document.querySelector(".empty-image");
 
 const list = [];
 

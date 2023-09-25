@@ -41,7 +41,7 @@ function rendiredFunc(array) {
   elToDoList.innerHTML = null;
   array.forEach((el) => {
     const newElement1 = document.createElement("li");
-    const newElementP = document.createElement("p");
+    // const newElementP = document.createElement("p");
     // const newElement2 = document.createElement("button");
     // const newElement3 = document.createElement("button");
     // const newElement4 = document.createElement("div");

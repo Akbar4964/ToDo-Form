@@ -22,7 +22,7 @@
     // list.push(newObj);
   // } else {
     // alert("bu malumot mavjud");
-  }
+  // }
 
   elToDoInput.value = null;
   rendiredFunc(list);

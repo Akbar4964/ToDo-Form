@@ -30,12 +30,11 @@ elForm.addEventListener("submit", function (evt) {
 
 function remove(evt) {
   if (evt.target.matches(".btn-delete")) {
-    console.log("bu btn delete");
+    const id = evt.target.dataset.itemId;
+    const findIdx = list.findIndex((el) => el.id == id);
+    list.splice(findIdx, 1);
+    rendiredFunc(list);
   }
-  // console.log(id);
-  // const findIdx = list.findIndex((el) => el.id == id);
-  // list.splice(findIdx, 1);
-  // rendiredFunc(list);
 }
 
 function rendiredFunc(array) {
@@ -53,13 +52,16 @@ function rendiredFunc(array) {
     newElement2.classList.add("btn-edit");
     newElement3.textContent = "Delete";
     newElement3.classList.add("btn-delete");
+    newElement3.dataset.itemId = el.id;
     newElement4.append(newElement2, newElement3);
     newElement4.classList.add("buttons");
     newElementP.textContent = el.title;
     newElementP.classList.add("text");
-    if (newElement1.length) {
-      elEmptyImage.remove();
-    }
+    // if (elToDoList.length === "") {
+    //   elEmptyImage.remove();
+    // } else if (elToDoList.length === false) {
+    //   return elEmptyImage;
+    // }
   });
 }
 

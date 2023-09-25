@@ -65,7 +65,7 @@
   // });
 // }
 
-// elToDoList.addEventListener("click", remove);
+elToDoList.addEventListener("click", remove);
 
 // const elForm = document.querySelector(".form-js");
 

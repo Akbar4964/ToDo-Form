@@ -56,7 +56,7 @@ function rendiredFunc(array) {
     newElement4.append(newElement2, newElement3);
     newElement4.classList.add("buttons");
     newElementP.textContent = el.title;
-    newElementP.classList.add("text");
+    // newElementP.classList.add("text");
     // if (elToDoList.length === "") {
     //   elEmptyImage.remove();
     // } else if (elToDoList.length === false) {

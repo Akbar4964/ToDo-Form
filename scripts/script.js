@@ -51,7 +51,7 @@ function rendiredFunc(array) {
     newElement2.textContent = "Edit";
     newElement2.classList.add("btn-edit");
     newElement3.textContent = "Delete";
-    newElement3.classList.add("btn-delete");
+    // newElement3.classList.add("btn-delete");
     // newElement3.dataset.itemId = el.id;
     // newElement4.append(newElement2, newElement3);
     // newElement4.classList.add("buttons");

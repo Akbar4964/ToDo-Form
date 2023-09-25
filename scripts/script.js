@@ -38,7 +38,7 @@ function remove(evt) {
 }
 
 function rendiredFunc(array) {
-  elToDoList.innerHTML = null;
+  // elToDoList.innerHTML = null;
   array.forEach((el) => {
     // const newElement1 = document.createElement("li");
     // const newElementP = document.createElement("p");

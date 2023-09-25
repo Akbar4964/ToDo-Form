@@ -55,7 +55,7 @@ function rendiredFunc(array) {
     newElement3.dataset.itemId = el.id;
     newElement4.append(newElement2, newElement3);
     newElement4.classList.add("buttons");
-    newElementP.textContent = el.title;
+    // newElementP.textContent = el.title;
     // newElementP.classList.add("text");
     // if (elToDoList.length === "") {
     //   elEmptyImage.remove();

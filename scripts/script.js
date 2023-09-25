@@ -47,7 +47,7 @@ function rendiredFunc(array) {
     const newElement4 = document.createElement("div");
     elToDoList.appendChild(newElement1);
     newElement1.append(newElementP, newElement4);
-    newElement1.classList.add("todo-lists");
+    // newElement1.classList.add("todo-lists");
     // newElement2.textContent = "Edit";
     // newElement2.classList.add("btn-edit");
     // newElement3.textContent = "Delete";

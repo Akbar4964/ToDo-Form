@@ -17,7 +17,7 @@ elForm.addEventListener("submit", function (evt) {
   } else if (findIdx < 0) {
     const newObj = {
       title: value.trim(),
-      id: Date.now(),
+      // id: Date.now(),
     };
     list.push(newObj);
   } else {

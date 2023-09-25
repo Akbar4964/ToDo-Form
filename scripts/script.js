@@ -37,7 +37,7 @@ function remove(evt) {
   }
 }
 
-function rendiredFunc(array) {
+// function rendiredFunc(array) {
   // elToDoList.innerHTML = null;
   // array.forEach((el) => {
     // const newElement1 = document.createElement("li");
@@ -63,7 +63,7 @@ function rendiredFunc(array) {
     //   return elEmptyImage;
     // }
   // });
-}
+// }
 
 // elToDoList.addEventListener("click", remove);
 

@@ -151,7 +151,7 @@ body {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.empty-image{
+.empty-image {
   width: 320px;
   height: 310px;
 }
@@ -191,4 +191,8 @@ body {
   font-size: 20px;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.bookmark {
+  cursor: pointer;
 }

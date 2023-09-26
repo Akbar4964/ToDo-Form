@@ -6,7 +6,16 @@ const elToDoList = document.querySelector(".todo-list");
 
 const elEmptyImage = document.querySelector(".empty-image");
 
-const list = [];
+let list = JSON.parse(localStorage.getItem("list"))
+  ? JSON.parse(localStorage.getItem("list"))
+  : [];
+
+function setList() {
+  console.log(list);
+  localStorage.setItem("list", JSON.stringify(list));
+}
+
+// const list = [];
 
 elForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
@@ -20,6 +29,7 @@ elForm.addEventListener("submit", function (evt) {
       id: Date.now(),
     };
     list.push(newObj);
+    setList();
   } else {
     alert("bu malumot mavjud");
   }
@@ -29,12 +39,33 @@ elForm.addEventListener("submit", function (evt) {
 });
 
 function remove(evt) {
-  if (evt.target.matches(".btn-delete")) {
-    const id = evt.target.dataset.itemId;
-    const findIdx = list.findIndex((el) => el.id == id);
-    list.splice(findIdx, 1);
-    rendiredFunc(list);
-  }
+  // if (evt.target.matches(".btn-delete")) {
+  //   const id = evt.target.dataset.itemId;
+  //   const findIdx = list.findIndex((el) => el.id == id);
+  //   list.splice(findIdx, 1);
+  //   rendiredFunc(list);
+  // }
+  const id = evt.target.dataset.itemId;
+  const findIdx = list.findIndex((el) => el.id == id);
+  list.splice(findIdx, 1);
+  rendiredFunc(list);
+  setList();
+}
+
+function edit(evt) {
+  const id = evt.target.dataset.itemId;
+  const editItem = prompt("Tekstni tahrirlang...");
+  const editList = list.map((el) => {
+    if (el.id == id) {
+      return {
+        ...el,
+        title: editItem,
+      };
+    }
+    return el;
+  });
+  rendiredFunc(editList);
+  setList();
 }
 
 function rendiredFunc(array) {
@@ -58,6 +89,7 @@ function rendiredFunc(array) {
     newElement4.classList.add("buttons");
     newElementP.textContent = el.title;
     newElementP.classList.add("text");
+    setList();
     // if (elToDoList.length === "") {
     //   elEmptyImage.remove();
     // } else if (elToDoList.length === false) {
@@ -66,73 +98,15 @@ function rendiredFunc(array) {
   });
 }
 
-elToDoList.addEventListener("click", remove);
+const clickedList = (evt) => {
+  if (evt.target.matches(".btn-delete")) {
+    remove(evt);
+  } else if (evt.target.matches(".btn-edit")) {
+    edit(evt);
+  }
+};
 
-function edit(evt) {
-  const id = evt.target.dataset.itemId;
-  if(){}
-}
-
-// const elForm = document.querySelector(".form-js");
-
-// const elToDoInput = document.querySelector(".todo-input");
-
-// const elToDoList = document.querySelector(".todo-list");
-
-// const elEmptyImage = document.querySelector(".empty-image");
-
-// const list = [];
-
-// elForm.addEventListener("submit", function (evt) {
-//   evt.preventDefault();
-//   let value = elToDoInput.value;
-//   const findIdx = list.findIndex((el) => el.title === value.trim());
-//   if (value === "") {
-//     alert("malumot mavjud emas");
-//   } else if (findIdx < 0) {
-//     const newObj = {
-//       title: value.trim(),
-//       id: Date.now(),
-//     };
-//     list.push(newObj);
-//   } else {
-//     alert("bu maluot mavjud");
-//   }
-
-//   elToDoInput.value = null;
-//   rendiredFunc(list);
-// });
-
-// function remove(id) {
-//   console.log(id);
-//   const findIdx = list.findIndex((el) => el.id == id);
-//   list.splice(findIdx, 1);
-//   rendiredFunc(list);
-// }
-
-// function rendiredFunc(arr) {
-//   elToDoList.innerHTML = null;
-
-//   arr.forEach((el) => {
-//     elToDoList.innerHTML += `
-//       <li class="todo">
-//           <span class="checked">${el.title}</span>
-//           <button
-//           class="delete-btn"
-//           onclick="remove(this)"
-//           >
-//           Edit
-//           </button>
-//           <button
-//           class="delete-btn"
-//           onclick="remove(${el.id})"
-//           >
-//           Delete
-//           </button>
-//       </li>
-//       `;
-//   });
-// }
+elToDoList.addEventListener("click", clickedList);
 
 // const elForm = document.querySelector(".form-js");
 
@@ -255,3 +229,66 @@ function edit(evt) {
 //       `;
 //   });
 // }
+
+// const elForm = document.querySelector(".form-js");
+
+// const elToDoInput = document.querySelector(".todo-input");
+
+// const elToDoList = document.querySelector(".todo-list");
+
+// const elEmptyImage = document.querySelector(".empty-image");
+
+// const list = [];
+
+// elForm.addEventListener("submit", function (evt) {
+//   evt.preventDefault();
+//   let value = elToDoInput.value;
+//   const findIdx = list.findIndex((el) => el.title === value.trim());
+//   if (value === "") {
+//     alert("malumot mavjud emas");
+//   } else if (findIdx < 0) {
+//     const newObj = {
+//       title: value.trim(),
+//       id: Date.now(),
+//     };
+//     list.push(newObj);
+//   } else {
+//     alert("bu maluot mavjud");
+//   }
+
+//   elToDoInput.value = null;
+//   rendiredFunc(list);
+// });
+
+// function remove(id) {
+//   console.log(id);
+//   const findIdx = list.findIndex((el) => el.id == id);
+//   list.splice(findIdx, 1);
+//   rendiredFunc(list);
+// }
+
+// function rendiredFunc(arr) {
+//   elToDoList.innerHTML = null;
+
+//   arr.forEach((el) => {
+//     elToDoList.innerHTML += `
+//       <li class="todo">
+//           <span class="checked">${el.title}</span>
+//           <button
+//           class="delete-btn"
+//           onclick="remove(this)"
+//           >
+//           Edit
+//           </button>
+//           <button
+//           class="delete-btn"
+//           onclick="remove(${el.id})"
+//           >
+//           Delete
+//           </button>
+//       </li>
+//       `;
+//   });
+// }
+
+localStorage.clear();

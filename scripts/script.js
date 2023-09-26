@@ -58,7 +58,7 @@ function rendiredFunc(array) {
     const newElement2 = document.createElement("button");
     const newElement3 = document.createElement("button");
     const newElement4 = document.createElement("div");
-    // const newElement5 = document.createElement("img");
+    const newElement5 = document.createElement("img");
     elToDoList.appendChild(newElement1);
     newElement1.append(newElementP, newElement4);
     newElement1.classList.add("todo-lists");

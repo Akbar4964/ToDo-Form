@@ -70,6 +70,7 @@ elToDoList.addEventListener("click", remove);
 
 function edit(evt) {
   const id = evt.target.dataset.itemId;
+  if(){}
 }
 
 // const elForm = document.querySelector(".form-js");

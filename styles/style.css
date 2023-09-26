@@ -23,7 +23,7 @@ body {
 }
 
 .todo-body {
-  width: 400px;
+  width: 500px;
   height: 500px;
   box-shadow: 0 0 10px purple;
   backdrop-filter: blur(10px);

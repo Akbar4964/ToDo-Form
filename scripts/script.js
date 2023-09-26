@@ -58,6 +58,7 @@ function rendiredFunc(array) {
     const newElement2 = document.createElement("button");
     const newElement3 = document.createElement("button");
     const newElement4 = document.createElement("div");
+    const newElement5 = document.createElement("img");
     elToDoList.appendChild(newElement1);
     newElement1.append(newElementP, newElement4);
     newElement1.classList.add("todo-lists");
@@ -67,8 +68,9 @@ function rendiredFunc(array) {
     newElement3.textContent = "Delete";
     newElement3.classList.add("btn-delete");
     newElement3.dataset.itemId = el.id;
-    newElement4.append(newElement2, newElement3);
+    newElement4.append(newElement2, newElement3, newElement5);
     newElement4.classList.add("buttons");
+    newElement5.src = "./assets/svg/bookmark.svg";
     newElementP.textContent = el.title;
     newElementP.classList.add("text");
   });

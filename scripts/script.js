@@ -59,6 +59,7 @@ function rendiredFunc(array) {
     const newElement3 = document.createElement("button");
     const newElement4 = document.createElement("div");
     const newElement5 = document.createElement("img");
+    const newElement6 = document.createElement("img");
     elToDoList.appendChild(newElement1);
     newElement1.append(newElementP, newElement4);
     newElement1.classList.add("todo-lists");
@@ -68,12 +69,17 @@ function rendiredFunc(array) {
     newElement3.textContent = "Delete";
     newElement3.classList.add("btn-delete");
     newElement3.dataset.itemId = el.id;
-    newElement4.append(newElement2, newElement3, newElement5);
+    newElement4.append(newElement2, newElement3, newElement5, newElement6);
     newElement4.classList.add("buttons");
     newElement5.src = "./assets/svg/bookmark.svg";
     newElement5.classList = "bookmark";
+    newElement6.src = "./assets/svg/bookmark-fill.svg";
     newElementP.textContent = el.title;
     newElementP.classList.add("text");
+    if (newElement5.click()) {
+      newElement5.remove();
+      return newElement6;
+    }
   });
 }
 

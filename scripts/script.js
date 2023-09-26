@@ -64,6 +64,7 @@ function rendiredFunc(array) {
     // }
   });
 }
+
 elToDoList.addEventListener("click", remove);
 
 // const elForm = document.querySelector(".form-js");

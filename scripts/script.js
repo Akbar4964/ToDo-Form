@@ -6,16 +6,7 @@ const elToDoList = document.querySelector(".todo-list");
 
 const elEmptyImage = document.querySelector(".empty-image");
 
-let list = JSON.parse(localStorage.getItem("list"))
-  ? JSON.parse(localStorage.getItem("list"))
-  : [];
-
-function setList() {
-  console.log(list);
-  localStorage.setItem("list", JSON.stringify(list));
-}
-
-// const list = [];
+const list = [];
 
 elForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
@@ -29,7 +20,6 @@ elForm.addEventListener("submit", function (evt) {
       id: Date.now(),
     };
     list.push(newObj);
-    setList();
   } else {
     alert("bu malumot mavjud");
   }
@@ -49,7 +39,6 @@ function remove(evt) {
   const findIdx = list.findIndex((el) => el.id == id);
   list.splice(findIdx, 1);
   rendiredFunc(list);
-  setList();
 }
 
 function edit(evt) {
@@ -65,7 +54,6 @@ function edit(evt) {
     return el;
   });
   rendiredFunc(editList);
-  setList();
 }
 
 function rendiredFunc(array) {
@@ -289,5 +277,3 @@ elToDoList.addEventListener("click", clickedList);
 //       `;
 //   });
 // }
-
-localStorage.clear();

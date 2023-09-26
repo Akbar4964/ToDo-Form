@@ -71,7 +71,7 @@ function rendiredFunc(array) {
     newElement4.append(newElement2, newElement3, newElement5);
     newElement4.classList.add("buttons");
     newElement5.src = "./assets/svg/bookmark.svg";
-    // newElementP.textContent = el.title;
+    newElementP.textContent = el.title;
     newElementP.classList.add("text");
   });
 }

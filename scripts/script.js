@@ -52,7 +52,7 @@ function remove(evt) {
   setList();
 }
 
-function edit(evt) {
+// function edit(evt) {
   const id = evt.target.dataset.itemId;
   const editItem = prompt("Tekstni tahrirlang...");
   const editList = list.map((el) => {

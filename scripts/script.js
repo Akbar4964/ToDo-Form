@@ -68,7 +68,7 @@ function rendiredFunc(array) {
     newElement3.textContent = "Delete";
     newElement3.classList.add("btn-delete");
     newElement3.dataset.itemId = el.id;
-    // newElement4.append(newElement2, newElement3, newElement5);
+    newElement4.append(newElement2, newElement3, newElement5);
     newElement4.classList.add("buttons");
     newElement5.src = "./assets/svg/bookmark.svg";
     newElementP.textContent = el.title;

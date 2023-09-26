@@ -75,6 +75,7 @@ function rendiredFunc(array) {
     //   elEmptyImage.remove();
     // } else if (elToDoList.length === false) {
     //   return elEmptyImage;
+    // }
   });
 }
 

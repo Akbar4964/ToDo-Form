@@ -67,6 +67,8 @@ function rendiredFunc(array) {
 
 elToDoList.addEventListener("click", remove);
 
+function edit() {}
+
 // const elForm = document.querySelector(".form-js");
 
 // const elToDoInput = document.querySelector(".todo-input");

@@ -73,7 +73,6 @@ function rendiredFunc(array) {
     newElementP.classList.add("text");
     // if (elToDoList.length === "") {
     //   elEmptyImage.remove();
-    // } else if (elToDoList.length === false)
   });
 }
 

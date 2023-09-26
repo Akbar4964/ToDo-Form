@@ -68,7 +68,7 @@ function rendiredFunc(array) {
 elToDoList.addEventListener("click", remove);
 
 function edit(evt) {
-  
+  const id = evt.target.dataset.itemId;
 }
 
 // const elForm = document.querySelector(".form-js");

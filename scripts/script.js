@@ -82,7 +82,7 @@ const clickedList = (evt) => {
   }
 };
 
-// elToDoList.addEventListener("click", clickedList);
+elToDoList.addEventListener("click", clickedList);
 
 // const elForm = document.querySelector(".form-js");
 

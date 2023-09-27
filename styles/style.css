@@ -220,4 +220,5 @@ body {
 .btn-box > button {
   cursor: pointer;
   padding: 10px 20px;
+  border-radius: 15px;
 }

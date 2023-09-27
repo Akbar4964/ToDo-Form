@@ -202,9 +202,9 @@ body {
   cursor: pointer;
 }
 
-/* .heart-aktive {
+.heart-aktive {
   fill: magenta;
-} */
+}
 
 .bookmark-aktive {
   fill: purple;

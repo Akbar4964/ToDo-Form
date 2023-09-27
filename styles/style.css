@@ -203,14 +203,14 @@ body {
 }
 
 .heart-aktive {
-  fill: magenta;
+  fill: orange;
 }
 
 .bookmark-aktive {
   fill: black;
 }
 
-.btn-box{
+.btn-box {
   display: flex;
   justify-content: center;
   gap: 30px;

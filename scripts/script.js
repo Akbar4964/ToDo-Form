@@ -176,20 +176,20 @@ const clickedList = (evt) => {
 
 elToDoList.addEventListener("click", clickedList);
 
-elBtnsList.forEach((el) => {
-  el.addEventListener("click", (evt) => {
-    if (evt.target.matches(".all-list")) {
-      rendiredFunc(list);
-    } else if (evt.target.matches(".like-list")) {
-      const filterdList = list.filter((el) => el.isLike);
-      rendiredFunc(filterdList);
-    } else if (evt.target.matches(".bookmark-list")) {
-      const bookmarkedList = list.filter((el) => el.isBookmark);
-      rendiredFunc(bookmarkedList);
-    }
-    console.log(evt.target);
-  });
-});
+// elBtnsList.forEach((el) => {
+//   el.addEventListener("click", (evt) => {
+//     if (evt.target.matches(".all-list")) {
+//       rendiredFunc(list);
+//     } else if (evt.target.matches(".like-list")) {
+//       const filterdList = list.filter((el) => el.isLike);
+//       rendiredFunc(filterdList);
+//     } else if (evt.target.matches(".bookmark-list")) {
+//       const bookmarkedList = list.filter((el) => el.isBookmark);
+//       rendiredFunc(bookmarkedList);
+//     }
+//     console.log(evt.target);
+//   });
+// });
 
 // const elForm = document.querySelector(".form-js");
 

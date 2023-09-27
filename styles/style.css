@@ -97,7 +97,7 @@ body {
 .todo-list {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 30px;
   padding: 0 30px;
   overflow: auto;
   height: 311px;

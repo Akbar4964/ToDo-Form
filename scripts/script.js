@@ -93,7 +93,7 @@ function rendiredFunc(array) {
     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
     <svg data-item-id=${
       el.id
-    } version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    } fill="purple" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        width="30px" height="30px" viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve">
     <path class="heart ${
       el.isLike ? "heart-aktive" : ""

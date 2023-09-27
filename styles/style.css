@@ -216,3 +216,7 @@ body {
   gap: 30px;
   margin-top: 20px;
 }
+
+.btn-box > button {
+  cursor: pointer;
+}

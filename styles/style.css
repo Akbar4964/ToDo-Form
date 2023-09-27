@@ -224,7 +224,7 @@ body {
   box-shadow: inset 0 0 1px #ccc;
   background-color: inherit;
   border-top-color: red;
-  /* border-bottom-color: green;
-  border-right-color: yellow;
+  border-bottom-color: green;
+  /* border-right-color: yellow;
   border-left-color: yellow; */
 }

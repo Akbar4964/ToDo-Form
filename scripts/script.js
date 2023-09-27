@@ -107,7 +107,7 @@ function rendiredFunc(array) {
     <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
     <svg data-item-id=${
       el.id
-    } fill="purple" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+    } fill="magenta" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
        viewBox="0 0 212.045 212.045" xml:space="preserve">
     <path class="bookmark ${
       el.isBookmark ? "bookmark-aktive" : ""

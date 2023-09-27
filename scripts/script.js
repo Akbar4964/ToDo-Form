@@ -88,17 +88,9 @@ function rendiredFunc(array) {
     newElement4.append(newElement2, newElement3, newElement5, newElement6);
     newElement4.classList.add("buttons");
 
-    newElement5.innerHTML = `<?xml version="1.0" encoding="utf-8"?>
-    <!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg data-item-id=${
-      el.id
-    } version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       width="30px" height="30px" viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve">
-    <path class="heart ${
-      el.isLike ? "heart-aktive" : ""
-    }" d="M13.91,6.75c-1.17,2.25-4.3,5.31-6.07,6.94c-0.1903,0.1718-0.4797,0.1718-0.67,0C5.39,12.06,2.26,9,1.09,6.75
-      C-1.48,1.8,5-1.5,7.5,3.45C10-1.5,16.48,1.8,13.91,6.75z"/>
+    newElement5.innerHTML = `<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+    <svg fill="#000000" width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 20a1 1 0 0 1-.437-.1C11.214 19.73 3 15.671 3 9a5 5 0 0 1 8.535-3.536l.465.465.465-.465A5 5 0 0 1 21 9c0 6.646-8.212 10.728-8.562 10.9A1 1 0 0 1 12 20z"/>
     </svg>`;
     newElement5.classList = "heart";
     newElement5.dataset.itemId = el.id;

@@ -121,11 +121,12 @@ body {
   box-shadow: 0 0 10px purple;
   background-color: inherit;
   border-radius: 70px;
+  cursor: pointer;
 }
 
 .todo-lists:hover {
   transition: all 1s;
-  transform: scale(1.1);
+  transform: scale(0.97);
 }
 
 .todo-list::-webkit-scrollbar {
@@ -195,4 +196,16 @@ body {
 
 .bookmark {
   cursor: pointer;
+}
+
+.heart {
+  cursor: pointer;
+}
+
+.heart-aktive {
+  fill: red;
+}
+
+.bookmark-aktive {
+  fill: #000;
 }

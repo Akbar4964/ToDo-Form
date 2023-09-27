@@ -225,6 +225,6 @@ body {
   background-color: inherit;
   border-top-color: red;
   border-bottom-color: green;
-  /* border-right-color: yellow;
-  border-left-color: yellow; */
+  border-right-color: yellow;
+  /* border-left-color: yellow; */
 }

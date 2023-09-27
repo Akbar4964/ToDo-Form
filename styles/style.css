@@ -221,4 +221,5 @@ body {
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 15px;
+  border: 0;
 }
